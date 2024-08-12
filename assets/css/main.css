@@ -1,11 +1,67 @@
+:root{
+    --primary-color:#080808;
+    --white-color:white;
+
+}
 *{
     margin: 0;
     padding: 0;
 }
+/*
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+    .montserrat-<uniquifier> {
+  
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+*/
+
 html{
     font-size: 62.5%;
 }
 body{
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;    
+    background-color: var(--white-color);
 }
-h1
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 5.5rem;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 4rem;
+}
+h6{
+    font-size: 3.5rem;
+}
+.main-bg{
+    background-image: url('../img/hollowed-boxes.svg');
+    background-position: center center;
+}
+.main-content{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.section{
+    min-height: 100vh;
+}
