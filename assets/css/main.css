@@ -1,7 +1,7 @@
 :root{
     --primary-color:#080808;
     --white-color:white;
-
+    --gap: 3rem;
 }
 *{
     margin: 0;
@@ -29,8 +29,7 @@ html{
 }
 body{
     font-size: 2rem;
-    font-family: "Open Sans", sans-serif;    
-    background-color: var(--white-color);
+    font-family: "Open Sans", sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "Montserrat", sans-serif;
@@ -38,6 +37,7 @@ h1, h2, h3, h4, h5, h6{
 h1{
     font-size: 6rem;
     text-transform: uppercase;
+
 }
 h2{
     font-size: 5.5rem;
@@ -57,10 +57,16 @@ h6{
 .main-bg{
     background-image: url('../img/hollowed-boxes.svg');
     background-position: center center;
+    color: var(--white-color);
+}
+.white-bg{
+    background-color: var(--white-color);
+    color:var(--primary-color)
 }
 .main-content{
     max-width: 1200px;
     margin:0 auto;
+    padding: var(--gap);
 }
 .section{
     min-height: 100vh;
